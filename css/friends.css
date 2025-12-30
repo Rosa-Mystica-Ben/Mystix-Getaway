@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.container{
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+
+			}
+
+.main{
+	max-width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+
+nav{
+	width: 100%;
+	height: 100px;
+	background-color: #fff;
+}
+
+nav ul{
+	float: right;
+}
+nav ul li{
+	display: inline-block;
+	list-style-type: none;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #272727;
+	line-height: 100px;
+	padding: 15px 15px;
+	font-size: 13px;
+	letter-spacing: 0.8px;
+}
+
+nav ul li a:hover{
+	background-color: #00dbdb;
+}
+
+.logo{
+  float: left;
+  line-height: 70px;
+  margin-top: 10px;
+  }
+
+.contain{
+   padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 400px;
+  }
+
+
+  .card{
+  height: 280px;
+  right: 400px;
+  position: relative;
+  display: inline-block;
+  max-width: 550px;
+  margin: 0 20px;
+  bottom: 10px;
+  background: black;
+  transition: 0.4s;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+.card:hover{
+  height: 470px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.card .img{
+  height: 200px;
+  width: 100%;
+}
+.card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card .top-text{
+  padding: 5px;
+}
+.card .top-text .name{
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+}
+.card .top-text p{
+  font-size: 20px;
+  font-weight: 600;
+  color: grey;
+  line-height: 20px;
+}
+.card .bottom-text{
+  padding: 0 20px 10px 20px;
+  margin-top: 5px;
+  background: black;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+  color: #fff
+}
+.card:hover .bottom-text{
+  opacity: 1;
+  visibility: visible;
+}
+.card .bottom-text .text{
+  text-align: justify;
+}
+.card .bottom-text .btn{
+  margin: 10px 0;
+  text-align: left;
+}
+.card .bottom-text .btn a{
+  text-decoration: none;
+  background: #fff;
+  color: black;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  transition: 0.2s;
+}
+.card .bottom-text .btn a:hover{
+  transform: scale(0.9);
+}
+@media screen and (max-width: 978px) {
+  .container{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .card{
+    max-width: 700px;
+    margin: 20px 0;
+  }
+}
+
+.head {
+  border: 3px solid grey;
+  padding: 8px;
+}
+
+.head h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000 ;
+  position: relative;
+  right: 210px;
+  text-align: center;
+}
+
